@@ -1,6 +1,6 @@
 fun main() {
     var number = 0
-    var dayString =""
+    var numberString =""
 
     //Ask user to input a number
     println("Please input a number between 1 and 10")
@@ -8,18 +8,18 @@ fun main() {
 
     //Assign dayString based on the user input..If out of range print out of range
     when(number) {
-        1 -> dayString = "Ein"
-        2 -> dayString = "Zwei"
-        3 -> dayString = "Drei"
-        4 -> dayString = "Vier"
-        5 -> dayString = "Funf"
-        6 -> dayString = "Sechs"
-        7 -> dayString = "Sieben"
-        8 -> dayString = "Acht"
-        9 -> dayString = "Neun"
-        10 -> dayString = "Zehn"
-        !in 1..10 -> dayString = "Out of range"
-        else -> dayString = "Unknown"
+        1 -> numberString = "Ein"
+        2 -> numberString = "Zwei"
+        3 -> numberString = "Drei"
+        4 -> numberString = "Vier"
+        5 -> numberString = "Funf"
+        6 -> numberString = "Sechs"
+        7 -> numberString = "Sieben"
+        8 -> numberString = "Acht"
+        9 -> numberString = "Neun"
+        10 -> numberString = "Zehn"
+        !in 1..10 -> numberString = "Out of range"
+        else -> numberString = "Unknown"
     }
-    println("The number $number is $dayString in German")
+    println("The number $number is $numberString in German")
 }
